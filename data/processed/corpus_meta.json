@@ -1,0 +1,10 @@
+{
+  "source_file": "mplus_topics_compressed_2026-10-10.zip",
+  "ingested_at_utc": "2026-10-11T07:33:50+00:00",
+  "english_topics_kept": 1016,
+  "skipped": {
+    "non_english": 1016,
+    "empty": 1
+  },
+  "attribution": "Information from MedlinePlus.gov, U.S. National Library of Medicine."
+}

@@ -1,0 +1,35 @@
+﻿# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Logs and temporary files
+*.log
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Local model and temporary files
+*.pkl
+*.bak
+git_status.txt
+old
+python
+type
+
+# Local evaluation cache
+data/semantic_cache/
