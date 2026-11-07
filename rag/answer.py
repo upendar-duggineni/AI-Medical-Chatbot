@@ -68,7 +68,7 @@ def _model_candidates():
 
     extra = os.getenv(
         "GEMINI_FALLBACK_MODELS",
-        "gemini-2.5-flash,gemini-2.5-flash-lite",
+        "gemini-3.8-flash,gemini-3.5-flash-lite",
     )
     names.extend(
         model.strip()
@@ -76,7 +76,7 @@ def _model_candidates():
         if model.strip()
     )
 
-    return list(dict.fromkeys(names)) or ["gemini-2.5-flash"]
+    return list(dict.fromkeys(names)) or ["gemini-3.8-flash"]
 
 
 def _try_next_model(exc):
@@ -416,7 +416,7 @@ def llm_check():
 
     info = {
         "api_key_set": bool(key),
-        "model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        "model": os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
     }
 
     if not key:
